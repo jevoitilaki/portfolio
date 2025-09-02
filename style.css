@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+  --color1: #f23e02; 
+  --color2: #fef5c8; 
+  --color3: #00988d; 
+  --color4: #2c6b74; 
+  --color5: #013750; 
+
+  --text-light: #fefefe; 
+  --text-dark: #222222; 
+
+  --font-base: 'Quicksand', sans-serif;
+  --font-title: 'Story Script', cursive;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color4);
+  z-index: 1000; /* garante que fique acima do conteúdo */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color2);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--color1);
+}
+
+body{
+    padding-top: 80px;
+    font-family: Quicksand;
+    background-color: var(--color5);
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+.projetos-container {
+  display: flex;          
+  gap: 30px;            
+  justify-content:flex-start ;   
+  flex-wrap: wrap;      
+  margin-top: 20px;
+}
+
+.projeto {
+  background: #fef5c8; 
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;        /* define a largura dos blocos */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  h3 {
+    color: var(--color1);
+  }
+}
+
+.projeto img {
+  max-width: 100%;  
+  border-radius: 6px;}
+
+p{
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+h1{
+    font-family: 'Story Script', cursive;
+    font-size: 3rem;
+    color: var(--color3);
+}
+
+h2{
+    font-family: 'Story Script', cursive;
+    font-size: 2rem;
+    color: var(--color3);
+    padding: 40px 0 0px 0;
+    border-bottom: 1px solid var(--color1);
+    display: inline-block;   /* faz o h3 ocupar só o tamanho do texto */
+    border-bottom: 2px solid var(--color1);
+    padding-bottom: 0.2rem;  /* opcional, dá um respiro entre o texto e a linha */
+}
+
+h3{
+    font-size: 1.5rem;
+    color: var(--color3);
+}
+
+.skills-container {
+  display: flex;          /* coloca os cards lado a lado */
+  flex-wrap: wrap;        /* quebra linha se não couber */
+  gap: 15px;              /* espaçamento entre os cards */
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.skill-card {
+  background: #fef5c8;   
+  border-radius: 20px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.skill-card h3 {
+  margin-bottom: 10px;
+  color: var(--color1);         
+  font-size: 1.2rem;
+  text-align: flex-start;
+}
+
+.skill-card ul {
+  list-style-type: disc;  /* mantém bolinhas */
+  padding-left: 20px;     /* afasta bolinhas da borda */
+}
+
+.skill-card li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+#experiencias h3 {
+  margin-top: 40px;    
+  margin-bottom: 0.5rem;  
+}
+#experiencias p {
+  margin-top: 0;    
+}
+#experiencias ul {
+  list-style-type: none;  
+  padding: 0;             
+}
+
+#contatos { 
+    display: flex;          
+    flex-direction: column; 
+    align-items: flex-start;    
+    gap: 12px;             
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+ 
+.contato-texto {
+    font-size: 1.1rem;     
+    line-height: 1.6;      
+    color: var(--text-light);}
+
+.contato-link {
+    margin-top: -10px;
+    margin-bottom: 50px;
+    list-style-type: none;  
+    padding: 0; 
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color2);
+}
+
+.contato-link li a {
+    color: var(--color2);
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--color4);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+#footer-p {
+    font-size: 1.1rem;
+    margin: rem 1rem;
+    color: var(--text-light);
+    justify-content: center;
+    text-align: center;
+}
+
+#footer-p2 {
+    font-size: 0.9rem;
+    margin: 0.5rem;
+    color: var(--text-light);
+    justify-content: center;
+    text-align: center;
+}
